@@ -41,7 +41,7 @@ Chức năng:
 
 ---
 
-## 3. Danh sách Use Case
+## 3. Danh sách Use Case 
 
 | STT | Use Case | Actor |
 |---|---:|---|
@@ -90,8 +90,16 @@ Bước 6: Quản lý nhận yêu cầu.
 
 ---
 
-## 5. UML dự kiến xây dựng
+## 5. Sơ đồ Use Case
 
-- Use Case Diagram
-- Sequence Diagram
-- Class Diagram
+Sơ đồ Use Case mô tả các tác nhân và chức năng chính của hệ thống quản lý nghỉ phép.
+<img width="1311" height="859" alt="Ảnh chụp màn hình 2026-05-16 170335" src="https://github.com/user-attachments/assets/00b86ecf-3add-4012-8390-c6aa29c3a949" /> 
+
+---
+
+## 6. Sơ đồ Sequence - Tạo đề xuất nghỉ phép
+
+Sơ đồ Sequence mô tả luồng xử lý khi nhân viên tạo đề xuất nghỉ phép trên hệ thống.
+<img width="1312" height="858" alt="Ảnh chụp màn hình 2026-05-16 183235" src="https://github.com/user-attachments/assets/f284ea26-862b-4d3d-8082-090db949ad1e" />
+
+
