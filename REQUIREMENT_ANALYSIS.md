@@ -102,4 +102,10 @@ Sơ đồ Use Case mô tả các tác nhân và chức năng chính của hệ t
 Sơ đồ Sequence mô tả luồng xử lý khi nhân viên tạo đề xuất nghỉ phép trên hệ thống.
 <img width="1312" height="858" alt="Ảnh chụp màn hình 2026-05-16 183235" src="https://github.com/user-attachments/assets/f284ea26-862b-4d3d-8082-090db949ad1e" />
 
+## 7. Sơ đồ Class hệ thống quản lý nghỉ phép
+
+Sơ đồ Class mô tả các lớp dữ liệu chính của hệ thống và mối quan hệ giữa các đối tượng như nhân viên, tài khoản, đơn nghỉ phép, phòng ban và lịch sử phê duyệt.
+
+
+<img width="1332" height="887" alt="Ảnh chụp màn hình 2026-05-22 173448" src="https://github.com/user-attachments/assets/9705a7a5-71b8-4840-896a-47a6b01f110a" />
 
