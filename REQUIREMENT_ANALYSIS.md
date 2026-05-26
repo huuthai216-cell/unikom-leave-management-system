@@ -4,15 +4,32 @@
 
 Tên đề tài:
 
-Xây dựng hệ thống quản lý đề xuất và phê duyệt nghỉ phép trong công ty Unikom.
+Xây dựng hệ thống quản lý đề xuất và phê duyệt nghỉ phép trong công ty Unikom. 
 
 Mục tiêu hệ thống:
 
 Xây dựng hệ thống hỗ trợ nhân viên tạo yêu cầu nghỉ phép, theo dõi trạng thái xử lý và hỗ trợ quản lý thực hiện phê duyệt.
 
----
+--- 
 
-## 2. Tác nhân tham gia hệ thống
+## 2.Phân tích hệ thống
+
+### Vấn đề hiện tại
+
+Trong doanh nghiệp, việc quản lý nghỉ phép bằng giấy tờ hoặc trao đổi thủ công có thể gây khó khăn trong quá trình theo dõi và xử lý yêu cầu.
+
+### Giải pháp đề xuất
+
+Hệ thống quản lý nghỉ phép Unikom hỗ trợ nhân viên tạo đề xuất nghỉ phép trực tuyến và hỗ trợ quản lý thực hiện phê duyệt nhanh chóng.
+
+### Lợi ích hệ thống
+
+- Giảm thời gian xử lý thủ công
+- Theo dõi trạng thái nghỉ phép dễ dàng
+- Quản lý tập trung dữ liệu
+- Tăng tính minh bạch
+
+## 3.Tác nhân tham gia hệ thống
 
 ### Nhân viên
 
@@ -41,7 +58,7 @@ Chức năng:
 
 ---
 
-## 3. Danh sách Use Case 
+## 4. Danh sách Use Case 
 
 | STT | Use Case | Actor |
 |---|---:|---|
@@ -58,7 +75,7 @@ Chức năng:
 
 ---
 
-## 4. Mô tả Use Case chính
+## 5. Mô tả Use Case chính
 
 ### Use Case: Tạo đề xuất nghỉ phép
 
@@ -90,22 +107,94 @@ Bước 6: Quản lý nhận yêu cầu.
 
 ---
 
-## 5. Sơ đồ Use Case
+## 6. Sơ đồ Use Case
 
 Sơ đồ Use Case mô tả các tác nhân và chức năng chính của hệ thống quản lý nghỉ phép.
 <img width="1311" height="859" alt="Ảnh chụp màn hình 2026-05-16 170335" src="https://github.com/user-attachments/assets/00b86ecf-3add-4012-8390-c6aa29c3a949" /> 
 
 ---
 
-## 6. Sơ đồ Sequence - Tạo đề xuất nghỉ phép
+## 7. Sơ đồ Sequence - Tạo đề xuất nghỉ phép
 
 Sơ đồ Sequence mô tả luồng xử lý khi nhân viên tạo đề xuất nghỉ phép trên hệ thống.
 <img width="1312" height="858" alt="Ảnh chụp màn hình 2026-05-16 183235" src="https://github.com/user-attachments/assets/f284ea26-862b-4d3d-8082-090db949ad1e" />
 
-## 7. Sơ đồ Class hệ thống quản lý nghỉ phép
+## . Sơ đồ Class hệ thống quản lý nghỉ phép
 
 Sơ đồ Class mô tả các lớp dữ liệu chính của hệ thống và mối quan hệ giữa các đối tượng như nhân viên, tài khoản, đơn nghỉ phép, phòng ban và lịch sử phê duyệt.
 
 
-<img width="1332" height="887" alt="Ảnh chụp màn hình 2026-05-22 173448" src="https://github.com/user-attachments/assets/9705a7a5-71b8-4840-896a-47a6b01f110a" />
+<img width="1332" height="887" alt="Ảnh chụp màn hình 2026-05-22 173448" src="https://github.com/user-attachments/assets/9705a7a5-71b8-4840-896a-47a6b01f110a" /> 
+
+## 9. Mô tả chi tiết Use Case
+## 9. Mô tả chi tiết Use Case
+
+### 9.1 Use Case: Đăng nhập
+
+Actor:
+Nhân viên, Quản lý, Quản trị viên
+
+Điều kiện:
+Người dùng đã có tài khoản trong hệ thống.
+
+Luồng chính:
+
+Bước 1: Người dùng nhập tài khoản và mật khẩu.
+
+Bước 2: Hệ thống kiểm tra thông tin.
+
+Bước 3: Hệ thống xác thực thành công.
+
+Bước 4: Chuyển đến màn hình chính.
+
+Kết quả:
+Người dùng đăng nhập thành công.
+
+---
+
+### 9.2 Use Case: Tạo đề xuất nghỉ phép
+
+Actor:
+Nhân viên
+
+Điều kiện:
+Nhân viên đã đăng nhập hệ thống.
+
+Luồng chính:
+
+Bước 1: Chọn chức năng tạo đề xuất nghỉ phép.
+
+Bước 2: Nhập lý do nghỉ, ngày bắt đầu, ngày kết thúc.
+
+Bước 3: Gửi yêu cầu.
+
+Bước 4: Hệ thống lưu dữ liệu.
+
+Bước 5: Gửi đề xuất đến quản lý.
+
+Kết quả:
+Đề xuất nghỉ phép được tạo thành công.
+
+---
+
+### 9.3 Use Case: Phê duyệt nghỉ phép
+
+Actor:
+Quản lý
+
+Điều kiện:
+Quản lý đã đăng nhập.
+
+Luồng chính:
+
+Bước 1: Xem danh sách đề xuất.
+
+Bước 2: Chọn đề xuất cần xử lý.
+
+Bước 3: Chọn phê duyệt hoặc từ chối.
+
+Bước 4: Hệ thống cập nhật trạng thái.
+
+Kết quả:
+Đơn nghỉ phép được cập nhật trạng thái xử lý.
 
