@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>  
+  <meta charset="UTF-8">
+  <title>Unikom Leave System</title>
+  <link rel="stylesheet" href="style.css"> 
+  </head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <div class="logo">🏢</div>
+
+    <h1>UNIKOM LEAVE MANAGEMENT SYSTEM</h1>
+
+    <p class="subtitle">
+        Hệ thống quản lý đề xuất và phê duyệt nghỉ phép
+    </p>
+</div>
+
+  <div id="loginPage" class="card">
+    <h2>Đăng nhập hệ thống</h2>
+
+    <label>Vai trò</label>
+    <select id="role">
+      <option value="employee">Nhân viên</option>
+      <option value="manager">Quản lý</option>
+    </select>
+
+    <button onclick="login()">Đăng nhập</button>
+  </div>
+
+  <div id="employeePage" class="card hidden">
+    <h2>👨‍💼 Cổng nhân viên</h2>
+
+    <label>Họ tên</label>
+    <input id="employeeName" type="text" placeholder="Nhập họ tên">
+
+    <label>Ngày bắt đầu nghỉ</label>
+    <input id="startDate" type="date">
+
+    <label>Ngày kết thúc nghỉ</label>
+    <input id="endDate" type="date">
+
+    <label>Lý do nghỉ phép</label>
+    <textarea id="reason" placeholder="Nhập lý do nghỉ phép"></textarea>
+
+    <button onclick="submitRequest()">Gửi đơn nghỉ phép</button>
+    <button class="secondary" onclick="logout()">Đăng xuất</button>
+
+    <h3>Lịch sử đơn nghỉ phép</h3>
+    <table>
+     <thead>
+  <tr>
+    <th>Mã đơn</th>
+    <th>Nhân viên</th>
+    <th>Từ ngày</th>
+    <th>Đến ngày</th>
+    <th>Lý do</th>
+    <th>Trạng thái</th>
+  </tr>
+  </thead>
+      <tbody id="employeeTable"></tbody>
+    </table>
+  </div>
+
+  <div id="managerPage" class="card hidden">
+    <h2>👔 Cổng quản lý</h2>
+
+    <h3>Danh sách đơn nghỉ phép</h3>
+    <button class="secondary" onclick="logout()">Đăng xuất</button>
+
+    <table>
+    <thead>
+  <tr>
+    <th>Mã đơn</th>
+    <th>Nhân viên</th>
+    <th>Từ ngày</th>
+    <th>Đến ngày</th>
+    <th>Lý do</th>
+    <th>Trạng thái</th>
+    <th>Hành động</th>
+  </tr>
+  </thead>
+      <tbody id="managerTable"></tbody>
+    </table>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
